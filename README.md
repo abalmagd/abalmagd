@@ -18,3 +18,5 @@
 
 - 📄 You can find my CV here [bit.ly/gdResume](bit.ly/gdResume)
 
+- 🔭 You can find me on **[bit.ly/gdResume](LinkedIn)**
+
