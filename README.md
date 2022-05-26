@@ -21,8 +21,8 @@
 - 🔭 You can find me on **[LinkedIn](https://www.linkedin.com/in/abalmagd/)**
 
 ## 🔧 Technologies & Tools
-![](https://img.shields.io/badge/Editor-Android_Studio-informational?style=flat&logo=visual-studio-code&logoColor=white&color=6aa6f8)
-![](https://img.shields.io/badge/Editor-VS_Code-informational?style=flat&logo=android-studio&logoColor=white&color=6aa6f8)
+![](https://img.shields.io/badge/Editor-Android_Studio-informational?style=flat&logo=android-studio&logoColor=green&color=6aa6f8)
+![](https://img.shields.io/badge/Editor-VS_Code-informational?style=flat&logo=visual-studio-code&logoColor=white&color=6aa6f8)
 ![](https://img.shields.io/badge/Code-Dart-green)
 ![](https://img.shields.io/badge/Code-C%2B%2B-yellowgreen)
 ![](https://img.shields.io/badge/Code-Java-red)
