@@ -16,7 +16,7 @@
 
 - 📫 You can reach me here **me@abulmagd.dev - 01093735899**
 
-- 📄 You can find my CV **[here](bit.ly/gdResume)**
+- 📄 You can find my CV here **[bit.ly/gdResume](bit.ly/gdResume)**
 
 - 🔭 You can find me on **[LinkedIn](LinkedIn)**
 
