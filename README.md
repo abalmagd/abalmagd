@@ -18,5 +18,5 @@
 
 - 📄 You can find my CV here **[bit.ly/gdResume](bit.ly/gdResume)**
 
-- 🔭 You can find me on **[LinkedIn](LinkedIn)**
+- 🔭 You can find me on **[LinkedIn](https://www.linkedin.com/in/abalmagd/)**
 
