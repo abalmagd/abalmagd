@@ -1,4 +1,4 @@
-# Hi there, I'm Mahmoud Abulmagd  👋 
+<align="center"># Hi there, I'm Mahmoud Abulmagd  👋 
 
 <!-- ![GitHub followers](https://img.shields.io/github/followers/abalmagd?label=Follow&style=social)
 <img alt = "profile views" src="https://komarev.com/ghpvc/?username=abalmagd&color=brightgreen"> -->
