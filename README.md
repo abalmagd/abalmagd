@@ -12,11 +12,11 @@
 
 - 🌱 I’m currently learning **React Native**
 
-- 👨‍💻 Previews of my projects are available at **[bit.ly/gdProjects](bit.ly/gdProjects)**
+- 👨‍💻 Previews of my projects are available at **[bit.ly/gdProjects](dhttps://bit.ly/gdProjects)**
 
 - 📫 You can reach me here **me@abulmagd.dev - 01093735899**
 
-- 📄 You can find my CV here **[bit.ly/abalmagdCV](https://bit.ly/mhResume)**
+- 📄 You can find my Resume here **[bit.ly/abalmagdCV](https://bit.ly/mhResume)**
 
 - 🔭 You can find me on **[LinkedIn](https://www.linkedin.com/in/abalmagd/)**
 
