@@ -16,7 +16,7 @@
 
 - 📫 You can reach me here **me@abulmagd.dev - 01093735899**
 
-- 📄 You can find my CV here **[bit.ly/abalmagdCV](https://bit.ly/abalmagdCV)**
+- 📄 You can find my CV here **[bit.ly/abalmagdCV]([https://bit.ly/abalmagdCV](https://bit.ly/mhResume))**
 
 - 🔭 You can find me on **[LinkedIn](https://www.linkedin.com/in/abalmagd/)**
 
