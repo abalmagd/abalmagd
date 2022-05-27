@@ -12,7 +12,7 @@
 
 - 🌱 I’m currently learning **React Native**
 
-- 👨‍💻 Previews of my projects are available at [bit.ly/gdProjects](bit.ly/gdProjects)
+- 👨‍💻 Previews of my projects are available at **[bit.ly/gdProjects](bit.ly/gdProjects)**
 
 - 📫 You can reach me here **me@abulmagd.dev - 01093735899**
 
