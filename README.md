@@ -10,7 +10,7 @@
 
 ## 👨🏻‍💻 &nbsp;About Me
 
-- 🌱 I’m currently learning **React Native**
+- 🌱 I’m currently learning **React**
 
 - 👨‍💻 Previews of my projects are available at **[bit.ly/gdProjects](https://bit.ly/gdProjects)**
 
