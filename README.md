@@ -1,7 +1,7 @@
 <h1 align="center">Hi there, I'm Mahmoud 👋</h1>
 
-<!-- ![GitHub followers](https://img.shields.io/github/followers/abalmagd?label=Follow&style=social)
-<img alt = "profile views" src="https://komarev.com/ghpvc/?username=abalmagd&color=brightgreen"> -->
+![GitHub followers](https://img.shields.io/github/followers/abalmagd?label=Follow&style=social)
+<img alt = "profile views" src="https://komarev.com/ghpvc/?username=abalmagd&color=brightgreen">
 
 <h3 align="center"> I'm a Flutter Developer!</h3>
 
@@ -20,105 +20,105 @@
 
 ## 🔧 Technologies & Tools
 <p align="left">
-    <a href="https://flutter.dev">
+    <a href="https://flutter.dev" style="text-decoration:none;">
         <img
         src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg"
         alt="Flutter"
         width="40"
         />
     </a>
-    <a href="https://dart.dev">
+    <a href="https://dart.dev" style="text-decoration:none;">
         <img
         src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg"
         alt="Dart"
         width="40"
         />
     </a>
-    <a href="https://play.google.com">
+    <a href="https://play.google.com" style="text-decoration:none;">
       <img
         src="https://www.vectorlogo.zone/logos/google_play/google_play-icon.svg"
         alt="Play Store"
         width="40"
       />
     </a>
-  <a href="https://developer.android.com">
+  <a href="https://developer.android.com" style="text-decoration:none;">
     <img
       src="https://www.vectorlogo.zone/logos/android/android-icon.svg"
       alt="Android"
       width="40"
     />
   </a>
-  <a href="https://www.java.com">
+  <a href="https://www.java.com" style="text-decoration:none;">
     <img
       src="https://www.vectorlogo.zone/logos/java/java-icon.svg"
       alt="Java"
       width="40"
     />
   </a>
-  <a href="https://react.dev/">
+  <a href="https://react.dev/" style="text-decoration:none;">
     <img
       src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg"
       alt="ReactJS"
       width="40"
     />
   </a>
-  <a href="https://firebase.google.com/">
+  <a href="https://firebase.google.com/" style="text-decoration:none;">
     <img
       src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg"
       alt="Firebase"
       width="40"
     />
   </a>
-  <a href="https://supabase.com/">
+  <a href="https://supabase.com/" style="text-decoration:none;">
     <img
       src="https://www.vectorlogo.zone/logos/supabase/supabase-icon.svg"
       alt="Supabase"
       width="40"
     />
   </a>
-  <a href="https://git-scm.com/">
+  <a href="https://git-scm.com/" style="text-decoration:none;">
     <img
       src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg"
       alt="Git"
       width="40"
     />
   </a>
-  <a href="https://github.com/">
+  <a href="https://github.com/" style="text-decoration:none;">
     <img
       src="https://www.vectorlogo.zone/logos/github/github-icon.svg"
       alt="Github"
       width="40"
     />
   </a>
-  <a href="https://azure.microsoft.com/en-us/">
+  <a href="https://azure.microsoft.com/en-us/" style="text-decoration:none;">
     <img
       src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg"
       alt="Microsoft Azure"
       width="40"
     />
   </a>
-  <a href="https://postman.com">
+  <a href="https://postman.com" style="text-decoration:none;">
     <img
       src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg"
       alt="Postman"
       width="40"
     />
   </a>
-  <a href="https://www.sqlite.org/">
+  <a href="https://www.sqlite.org/" style="text-decoration:none;">
     <img
       src="https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg"
       alt="SQLite"
       width="40"
     />
   </a>
-  <a href="https://www.figma.com/">
+  <a href="https://www.figma.com/" style="text-decoration:none;">
     <img
       src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg"
       alt="Figma"
       width="40"
     />
   </a>
-  <a href="https://www.adobe.com/products/xd.html">
+  <a href="https://www.adobe.com/products/xd.html" style="text-decoration:none;">
     <img
       src="https://cdn.worldvectorlogo.com/logos/adobe-xd.svg"
       alt="Adobe XD"
