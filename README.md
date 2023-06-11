@@ -12,11 +12,9 @@
 
 - 🌱 I’m currently learning **ReactJS**
 
-- 👨‍💻 Previews of my projects are available at **[bit.ly/gdProjects](https://bit.ly/gdProjects)**
-
 - 📫 You can reach me here **me@abulmagd.dev - 01093735899**
 
-- 📄 You can find my Resume here **[bit.ly/abalmagdCV](https://bit.ly/mhResume)**
+- 📄 You can find my Resume **[here](https://drive.google.com/file/d/14Eecw8MfclHq37hYXDmUAqwm2IxU0mb4/view?usp=drive_link)**
 
 - 🔭 You can find me on **[LinkedIn](https://www.linkedin.com/in/abalmagd/)**
 
