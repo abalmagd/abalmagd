@@ -17,7 +17,7 @@
 
 ## 🔧 Technologies & Tools
 <p align="left">
-    <a href="https://flutter.dev" style="text-decoration: none;">
+    <a href="https://flutter.dev" style="text-decoration:none;">
         <img
         src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg"
         alt="Flutter"
