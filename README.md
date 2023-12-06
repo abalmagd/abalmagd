@@ -7,7 +7,7 @@
 
 ## 👨🏻‍💻 &nbsp;About Me
 
-- 🌱 I’m currently learning **ReactJS**
+- 🌱 I’m currently learning **[Dart Frog](https://pub.dev/packages/dart_frog)**
 
 - 📫 You can reach me here **me@abulmagd.dev - 01093735899**
 
