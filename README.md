@@ -7,7 +7,7 @@
 
 ## 👨🏻‍💻 &nbsp;About Me
 
-- 🌱 I’m currently learning **[Dart Frog](https://pub.dev/packages/dart_frog)**
+- 🌱 I’m currently working on **[My Portfolio]([https://pub.dev/packages/dart_frog](https://github.com/abalmagd/abalmagd))**
 
 - 📫 You can reach me here **me@abulmagd.dev - 01093735899**
 
