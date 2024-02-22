@@ -1,0 +1,34 @@
+[
+  {
+    "family": "MaterialIcons",
+    "fonts": [
+      {
+        "asset": "fonts/MaterialIcons-Regular.otf"
+      }
+    ]
+  },
+  {
+    "family": "Montserrat",
+    "fonts": [
+      {
+        "asset": "assets/fonts/montserrat/Montserrat-VariableFont_wght.ttf"
+      }
+    ]
+  },
+  {
+    "family": "Raleway",
+    "fonts": [
+      {
+        "asset": "assets/fonts/raleway/Raleway-VariableFont_wght.ttf"
+      }
+    ]
+  },
+  {
+    "family": "Open Sans",
+    "fonts": [
+      {
+        "asset": "assets/fonts/open_sans/OpenSans-VariableFont_wght.ttf"
+      }
+    ]
+  }
+]
