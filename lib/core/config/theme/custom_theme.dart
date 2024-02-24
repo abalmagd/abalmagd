@@ -9,9 +9,11 @@ class CustomTheme {
       useMaterial3: true,
       colorScheme: ColorScheme.fromSeed(
         seedColor: Palette.primaryColor,
+        primary: Palette.primaryColor,
         secondary: Palette.secondaryColor,
       ),
-      scaffoldBackgroundColor: Palette.scaffoldBackground,
+      appBarTheme: const AppBarTheme(backgroundColor: Palette.appBarBackground),
+      scaffoldBackgroundColor: Palette.scaffoldBackgroundLight,
       textTheme: TextThemes.textTheme(context),
     );
   }
