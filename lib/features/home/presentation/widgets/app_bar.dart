@@ -24,13 +24,12 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceAround,
       children: [
-        Text(MediaQuery.sizeOf(context).width.toString()),
         SvgPicture.asset(Data.person.brand),
         Row(
           children: AppBarButton.values.map(
             (btn) {
               return Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 20),
+                padding: const EdgeInsets.symmetric(horizontal: 12),
                 child: TextButton(
                   onPressed: () {
                     switch (btn) {

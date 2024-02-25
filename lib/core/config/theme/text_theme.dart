@@ -28,7 +28,8 @@ class TextThemes {
       displayLarge: theme.textTheme.displaySmall?.copyWith(
         fontFamily: 'Raleway',
         fontSize: isMobile ? 35 : 80,
-        fontVariations: [const FontVariation('wght', 700)],
+        fontVariations: [const FontVariation('wght', 900)],
+        color: theme.scaffoldBackgroundColor,
       ),
       // endregion
       // region Headlines. Used for section headlines and skill titles.

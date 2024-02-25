@@ -34,6 +34,7 @@ dependencies:
   gap: ^3.0.1
   web_smooth_scroll: ^1.1.0
   flutter_hooks: ^0.20.5
+  widget_mask: ^1.0.0+0
 
 dev_dependencies:
   flutter_test:

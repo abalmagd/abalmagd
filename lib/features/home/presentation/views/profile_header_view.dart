@@ -4,6 +4,7 @@ import 'package:portfolio/core/constants/assets.dart';
 import 'package:portfolio/core/constants/spacing.dart';
 import 'package:portfolio/core/domain/data.dart';
 import 'package:portfolio/utils/localization_tracker.dart';
+import 'package:widget_mask/widget_mask.dart';
 
 class ProfileHeaderView extends StatelessWidget {
   const ProfileHeaderView({super.key});
@@ -11,63 +12,67 @@ class ProfileHeaderView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    final size = MediaQuery.sizeOf(context);
     return SizedBox(
-      height: size.height,
-      child: Stack(
-        children: [
-          CustomPaint(
-            size: Size(double.infinity, size.height),
-            painter: TestPainter(),
+      height: Spacing.webProfileHeaderHeight,
+      child: WidgetMask(
+        blendMode: BlendMode.difference,
+        mask: Padding(
+          padding: const EdgeInsetsDirectional.only(
+            start: Spacing.webHorizontalPadding,
           ),
-          Padding(
-            padding: const EdgeInsets.symmetric(
-              horizontal: Spacing.webHorizontalPadding,
-            ),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text(
-                        'Hi, I am'.hardcoded,
-                        style: theme.textTheme.displayMedium,
-                      ),
-                      const Gap(40),
-                      Text(
-                        Data.person.name,
-                        maxLines: 2,
-                        overflow: TextOverflow.clip,
-                        style: theme.textTheme.displayLarge,
-                      ),
-                      Text(
-                        Data.person.position,
-                        style: theme.textTheme.displaySmall,
-                      ),
-                    ],
-                  ),
+          child: Row(
+            children: [
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    const Gap(100),
+                    Text(
+                      MediaQuery.sizeOf(context).width.toString(),
+                      style: const TextStyle(fontSize: 10),
+                    ),
+                    Text(
+                      'Hi, I am'.hardcoded,
+                      style: theme.textTheme.displayMedium,
+                    ),
+                    const Gap(40),
+                    Text(
+                      Data.person.name,
+                      maxLines: 2,
+                      overflow: TextOverflow.visible,
+                      style: theme.textTheme.displayLarge,
+                    ),
+                    Text(
+                      Data.person.position,
+                      style: theme.textTheme.displaySmall,
+                    ),
+                  ],
                 ),
-                Align(
-                  alignment: Alignment.bottomCenter,
-                  child: Image.asset(
-                    Assets.profileImage,
-                    // width: size.width * 0.51,
-                    fit: BoxFit.contain,
-                  ),
-                ),
-              ],
-            ),
+              ),
+              Image.asset(
+                Assets.profileImage,
+                alignment: Alignment.bottomCenter,
+                height: Spacing.webProfileHeaderHeight * 0.9,
+              ),
+            ],
           ),
-        ],
+        ),
+        child: CustomPaint(
+          size: const Size(
+            double.infinity,
+            Spacing.webProfileHeaderHeight,
+          ),
+          painter: BackgroundPainter(),
+        ),
       ),
     );
   }
 }
 
-class TestPainter extends CustomPainter {
+class BackgroundPainter extends CustomPainter {
+  BackgroundPainter();
+
   @override
   void paint(Canvas canvas, Size size) {
     var paint = Paint()
@@ -77,17 +82,13 @@ class TestPainter extends CustomPainter {
     var path = Path();
 
     path.moveTo(size.width, 0);
-    path.lineTo(size.width * 0.5, 0);
+    path.lineTo(size.width * 0.6, 0);
     path.lineTo(size.width * 0.4, size.height);
     path.lineTo(size.width, size.height);
-
-    // TODO: Draw your path
 
     canvas.drawPath(path, paint);
   }
 
   @override
-  bool shouldRepaint(CustomPainter oldDelegate) {
-    return true;
-  }
+  bool shouldRepaint(CustomPainter oldDelegate) => false;
 }
