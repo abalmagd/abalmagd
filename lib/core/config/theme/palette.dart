@@ -1,25 +1,18 @@
 import 'package:flutter/material.dart';
 
 class Palette {
-  // region Cases
-  static const danger = Color(0xFFFF5252);
-  static const ok = Color(0xFF4CAF50);
-  static const neutral = Color(0xFF607D8B);
-
-  // endregion
-
   // region Common
   static const white = Colors.white;
   static const black = Colors.black;
   static const transparent = Colors.transparent;
-  static const primaryColor = black;
-  static const secondaryColor = Color(0Xff1A1A1A);
-  static const appBarBackground = transparent;
+  static const primaryColor = Color(0xff7E74F1);
+  static const primaryColorLight = Color(0xffEAE6FE);
 
   // endregion
 
   // region App (Light Theme)
-  static const scaffoldBackgroundLight = Color(0xffC4C4C4);
-  static const gradientColorLight = white;
+  static const scaffoldBackgroundLight = white;
+  static const darkTextColor = Color(0xff232E35);
+  static const greyTextColor = Color(0xff656D72);
 // endregion
 }

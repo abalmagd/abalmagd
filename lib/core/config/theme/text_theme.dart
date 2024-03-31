@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import 'package:portfolio/core/config/responsive.dart';
 
@@ -8,97 +6,63 @@ class TextThemes {
     final theme = Theme.of(context);
     final isMobile = Responsive.isMobile(context);
     return TextTheme(
-      // region Displays. Largest text. Used in portfolio header.
-      /// Work Specialty
-      displaySmall: theme.textTheme.displaySmall?.copyWith(
-        fontFamily: 'Raleway',
-        fontSize: isMobile ? 12 : 25,
-        color: theme.colorScheme.secondary,
-        fontVariations: [const FontVariation('wght', 800)],
-      ),
-
-      /// Hi, I am
-      displayMedium: theme.textTheme.displaySmall?.copyWith(
-        fontFamily: 'Raleway',
-        fontSize: isMobile ? 20 : 40,
-        fontVariations: [const FontVariation('wght', 700)],
-      ),
-
-      /// My name
-      displayLarge: theme.textTheme.displaySmall?.copyWith(
-        fontFamily: 'Raleway',
-        fontSize: isMobile ? 35 : 80,
-        fontVariations: [const FontVariation('wght', 900)],
-        color: theme.scaffoldBackgroundColor,
-      ),
-      // endregion
-      // region Headlines. Used for section headlines and skill titles.
-      /// Section headlines
+      // region Headlines. Uses Plus Jakarta Sans font.
+      /// Profile name
       headlineLarge: theme.textTheme.headlineLarge?.copyWith(
-        fontFamily: 'Montserrat',
-        fontSize: isMobile ? 14 : 30,
-        fontVariations: [const FontVariation('wght', 700)],
+        fontFamily: 'Plus Jakarta Sans',
+        fontSize: 44,
+        fontWeight: FontWeight.w800,
       ),
 
-      /// Skill titles
+      /// Bold section headlines
       headlineMedium: theme.textTheme.headlineMedium?.copyWith(
-        fontFamily: 'Montserrat',
-        fontSize: 24,
-        fontVariations: [const FontVariation('wght', 400)],
+        fontFamily: 'Plus Jakarta Sans',
+        fontSize: 36,
+        fontWeight: FontWeight.w700,
       ),
 
-      /// Other headlines
+      /// Item/Card headlines
       headlineSmall: theme.textTheme.headlineSmall?.copyWith(
-        fontFamily: 'Montserrat',
-        fontSize: 15,
-        fontVariations: [const FontVariation('wght', 700)],
+        fontFamily: 'Plus Jakarta Sans',
+        fontSize: 16,
+        fontWeight: FontWeight.w500,
       ),
       // endregion
-      // region Body. Used for description texts.
-      /// General descriptions
+      // region Body. Used for description texts. Uses Inter font.
+      /// General descriptions/body texts.
       bodyLarge: theme.textTheme.bodyLarge?.copyWith(
-        fontFamily: 'Open Sans',
-        fontSize: 15,
-        fontVariations: [const FontVariation('wght', 400)],
+        fontFamily: 'Inter',
+        fontSize: 16,
+        fontWeight: FontWeight.w400,
       ),
 
-      /// Working points description (Development, maintenance, etc)
       bodyMedium: theme.textTheme.bodyMedium?.copyWith(
-        fontFamily: 'Open Sans',
+        fontFamily: 'Inter',
         fontSize: 14,
-        fontVariations: [const FontVariation('wght', 300)],
+        fontWeight: FontWeight.w400,
       ),
 
-      /// Project description
       bodySmall: theme.textTheme.bodySmall?.copyWith(
-        fontFamily: 'Open Sans',
+        fontFamily: 'Inter',
         fontSize: 14,
-        fontVariations: [const FontVariation('wght', 300)],
+        fontWeight: FontWeight.w300,
       ),
       // endregion
-      // region Labels. Used for app bar buttons and minor section headers.
-      /// App bar
+      // region Labels. Used for button texts and other labels.
+      /// App bar buttons
       labelLarge: theme.textTheme.labelLarge?.copyWith(
-        fontFamily: 'Montserrat',
-        fontSize: isMobile ? 12 : 17,
-        fontVariations: [FontVariation('wght', isMobile ? 600 : 700)],
+        fontFamily: 'Inter',
+        fontSize: 16,
+        fontWeight: FontWeight.w400,
       ),
 
-      /// Buttons
+      /// Spaced, thinner section headlines
       labelMedium: theme.textTheme.labelMedium?.copyWith(
-        fontFamily: 'Montserrat',
-        fontSize: isMobile ? 13 : 16,
-        fontVariations: [const FontVariation('wght', 700)],
+        fontFamily: 'Inter',
+        fontSize: 12,
+        fontWeight: FontWeight.w500,
+        letterSpacing: 8,
       ),
-
-      /// Text fields
-      labelSmall: theme.textTheme.labelSmall?.copyWith(
-        fontFamily: 'Montserrat',
-        fontSize: isMobile ? 12 : 14,
-        fontVariations: [const FontVariation('wght', 700)],
-      ),
-      // labelMedium: ,
-      // labelLarge: ,
       // endregion
     );
   }

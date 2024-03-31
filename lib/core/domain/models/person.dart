@@ -1,15 +1,17 @@
 class Person {
-  Person({
-    required this.name,
-    required this.position,
-    required this.image,
-    required this.brand,
-    required this.contactUrl,
+  const Person({
+    required this.firstName,
+    required this.lastName,
+    required this.description,
+    required this.imagePath,
+    required this.frontLogoPath,
+    required this.backLogoPath,
   });
 
-  final String name;
-  final String position;
-  final String image;
-  final String brand;
-  final String contactUrl;
+  final String firstName;
+  final String lastName;
+  final String description;
+  final String imagePath;
+  final String frontLogoPath;
+  final String backLogoPath;
 }

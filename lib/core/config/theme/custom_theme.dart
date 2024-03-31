@@ -7,14 +7,22 @@ class CustomTheme {
   static ThemeData lightTheme(BuildContext context) {
     return ThemeData(
       useMaterial3: true,
-      colorScheme: ColorScheme.fromSeed(
-        seedColor: Palette.primaryColor,
-        primary: Palette.primaryColor,
-        secondary: Palette.secondaryColor,
-      ),
-      appBarTheme: const AppBarTheme(backgroundColor: Palette.appBarBackground),
+      colorScheme: ColorScheme.fromSeed(seedColor: Palette.primaryColor),
+      primaryColor: Palette.primaryColor,
+      primaryColorLight: Palette.primaryColorLight,
+      appBarTheme: const AppBarTheme(backgroundColor: Palette.transparent),
       scaffoldBackgroundColor: Palette.scaffoldBackgroundLight,
-      textTheme: TextThemes.textTheme(context),
+      textButtonTheme: TextButtonThemeData(
+        style: TextButton.styleFrom(
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(8),
+          ),
+        ),
+      ),
+      textTheme: TextThemes.textTheme(context).apply(
+        bodyColor: Palette.darkTextColor,
+        displayColor: Palette.darkTextColor,
+      ),
     );
   }
 }

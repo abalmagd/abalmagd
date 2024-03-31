@@ -1,20 +1,37 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:portfolio/core/config/theme/custom_theme.dart';
+import 'package:portfolio/core/constants/assets.dart';
+import 'package:portfolio/core/domain/data.dart';
 import 'package:portfolio/features/home/presentation/home_page.dart';
 
-void main() {
-  runApp(const MyApp());
+import 'core/constants/localization.dart';
+
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await EasyLocalization.ensureInitialized();
+  runApp(
+    EasyLocalization(
+      supportedLocales: Localization.supportedLocales,
+      path: Assets.translations,
+      fallbackLocale: const Locale('en'),
+      useOnlyLangCode: true,
+      child: const MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Mahmoud Abulmajd',
+      title: Data.person.firstName,
       debugShowCheckedModeBanner: false,
+      localizationsDelegates: context.localizationDelegates,
+      supportedLocales: context.supportedLocales,
+      locale: context.locale,
       theme: CustomTheme.lightTheme(context),
       home: const HomePage(),
     );

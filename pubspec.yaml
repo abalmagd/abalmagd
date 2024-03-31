@@ -32,9 +32,9 @@ dependencies:
     sdk: flutter
   flutter_svg: ^2.0.10+1
   gap: ^3.0.1
-  web_smooth_scroll: ^1.1.0
   flutter_hooks: ^0.20.5
-  widget_mask: ^1.0.0+0
+  intl: ^0.18.1
+  easy_localization: ^3.0.5
 
 dev_dependencies:
   flutter_test:
@@ -45,7 +45,7 @@ dev_dependencies:
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
-  flutter_lints: ^3.0.1
+  flutter_lints: ^3.0.2
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -57,16 +57,39 @@ flutter:
     - assets/icons/
     - assets/images/
     - assets/fonts/
+    - assets/translations/
 
   fonts:
-    - family: Montserrat
+    - family: Plus Jakarta Sans
       fonts:
-        - asset: assets/fonts/montserrat/Montserrat-VariableFont_wght.ttf
+        - asset: assets/fonts/plus_jakarta_sans/PlusJakartaSans-ExtraLight.ttf
+          weight: 200
+        - asset: assets/fonts/plus_jakarta_sans/PlusJakartaSans-Light.ttf
+          weight: 300
+        - asset: assets/fonts/plus_jakarta_sans/PlusJakartaSans-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/plus_jakarta_sans/PlusJakartaSans-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/plus_jakarta_sans/PlusJakartaSans-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/plus_jakarta_sans/PlusJakartaSans-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/plus_jakarta_sans/PlusJakartaSans-ExtraBold.ttf
+          weight: 800
 
-    - family: Raleway
+    - family: Inter
       fonts:
-        - asset: assets/fonts/raleway/Raleway-VariableFont_wght.ttf
-
-    - family: 'Open Sans'
-      fonts:
-        - asset: assets/fonts/open_sans/OpenSans-VariableFont_wght.ttf
+        - asset: assets/fonts/inter/Inter-Thin.ttf
+          weight: 100
+        - asset: assets/fonts/inter/Inter-ExtraLight.ttf
+          weight: 200
+        - asset: assets/fonts/inter/Inter-Light.ttf
+          weight: 300
+        - asset: assets/fonts/inter/Inter-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/inter/Inter-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/inter/Inter-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/inter/Inter-Bold.ttf
+          weight: 700

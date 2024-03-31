@@ -1,14 +1,59 @@
 {
-  "assets/fonts/montserrat/Montserrat-VariableFont_wght.ttf": [
-    "assets/fonts/montserrat/Montserrat-VariableFont_wght.ttf"
+  "assets/fonts/inter/Inter-Bold.ttf": [
+    "assets/fonts/inter/Inter-Bold.ttf"
   ],
-  "assets/fonts/open_sans/OpenSans-VariableFont_wght.ttf": [
-    "assets/fonts/open_sans/OpenSans-VariableFont_wght.ttf"
+  "assets/fonts/inter/Inter-ExtraLight.ttf": [
+    "assets/fonts/inter/Inter-ExtraLight.ttf"
   ],
-  "assets/fonts/raleway/Raleway-VariableFont_wght.ttf": [
-    "assets/fonts/raleway/Raleway-VariableFont_wght.ttf"
+  "assets/fonts/inter/Inter-Light.ttf": [
+    "assets/fonts/inter/Inter-Light.ttf"
   ],
-  "assets/images/separator.png": [
-    "assets/images/separator.png"
+  "assets/fonts/inter/Inter-Medium.ttf": [
+    "assets/fonts/inter/Inter-Medium.ttf"
+  ],
+  "assets/fonts/inter/Inter-Regular.ttf": [
+    "assets/fonts/inter/Inter-Regular.ttf"
+  ],
+  "assets/fonts/inter/Inter-SemiBold.ttf": [
+    "assets/fonts/inter/Inter-SemiBold.ttf"
+  ],
+  "assets/fonts/inter/Inter-Thin.ttf": [
+    "assets/fonts/inter/Inter-Thin.ttf"
+  ],
+  "assets/fonts/plus_jakarta_sans/PlusJakartaSans-Bold.ttf": [
+    "assets/fonts/plus_jakarta_sans/PlusJakartaSans-Bold.ttf"
+  ],
+  "assets/fonts/plus_jakarta_sans/PlusJakartaSans-ExtraBold.ttf": [
+    "assets/fonts/plus_jakarta_sans/PlusJakartaSans-ExtraBold.ttf"
+  ],
+  "assets/fonts/plus_jakarta_sans/PlusJakartaSans-ExtraLight.ttf": [
+    "assets/fonts/plus_jakarta_sans/PlusJakartaSans-ExtraLight.ttf"
+  ],
+  "assets/fonts/plus_jakarta_sans/PlusJakartaSans-Light.ttf": [
+    "assets/fonts/plus_jakarta_sans/PlusJakartaSans-Light.ttf"
+  ],
+  "assets/fonts/plus_jakarta_sans/PlusJakartaSans-Medium.ttf": [
+    "assets/fonts/plus_jakarta_sans/PlusJakartaSans-Medium.ttf"
+  ],
+  "assets/fonts/plus_jakarta_sans/PlusJakartaSans-Regular.ttf": [
+    "assets/fonts/plus_jakarta_sans/PlusJakartaSans-Regular.ttf"
+  ],
+  "assets/fonts/plus_jakarta_sans/PlusJakartaSans-SemiBold.ttf": [
+    "assets/fonts/plus_jakarta_sans/PlusJakartaSans-SemiBold.ttf"
+  ],
+  "assets/icons/brand_letter.svg": [
+    "assets/icons/brand_letter.svg"
+  ],
+  "assets/icons/brand_strokes.svg": [
+    "assets/icons/brand_strokes.svg"
+  ],
+  "assets/images/profile_picture.png": [
+    "assets/images/profile_picture.png"
+  ],
+  "assets/translations/ar.json": [
+    "assets/translations/ar.json"
+  ],
+  "assets/translations/en.json": [
+    "assets/translations/en.json"
   ]
 }
