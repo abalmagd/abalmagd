@@ -7,7 +7,7 @@ class Data {
   static const person = Person(
     name: 'firstName',
     description: 'description',
-    imagePath: Assets.profilePicture,
+    imagePath: Assets.pfp,
     logoPath: Assets.logoStrokes,
   );
 }

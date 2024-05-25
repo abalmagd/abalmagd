@@ -16,9 +16,12 @@ class CustomTheme {
         style: TextButton.styleFrom(
           backgroundColor: Palette.transparent.color,
           textStyle: textTheme.labelMedium,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(8),
+          ),
         ),
       ),
-      elevatedButtonTheme: ElevatedButtonThemeData(),
+      elevatedButtonTheme: const ElevatedButtonThemeData(),
       textTheme: TextThemes.textTheme(context).apply(
         bodyColor: Palette.bodyText.color,
       ),

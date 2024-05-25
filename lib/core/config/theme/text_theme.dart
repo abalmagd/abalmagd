@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/core/config/responsive.dart';
 
 class TextThemes {
   static TextTheme textTheme(BuildContext context) {
     final theme = Theme.of(context);
-    final isMobile = Responsive.isMobile(context);
     return TextTheme(
       // region Headlines
       // All headlines

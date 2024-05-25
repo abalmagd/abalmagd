@@ -4,12 +4,14 @@ class Assets {
   static const translations = 'assets/translations';
 
   // region Icons
-  static const logoLetter = '$icons/logo_letter.svg';
   static const logoStrokes = '$icons/logo_strokes.svg';
+  static const linkedin = '$icons/linkedin.svg';
+  static const github = '$icons/github.svg';
+  static const doc = '$icons/doc.svg';
 
   // endregion
 
 // region Images
-  static const profilePicture = '$images/profile_picture.png';
+  static const pfp = '$images/pfp.jpg';
 // endregion
 }

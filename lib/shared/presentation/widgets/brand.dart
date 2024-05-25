@@ -40,10 +40,9 @@ class ProfilePicture extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final theme = Theme.of(context);
     return ClipRRect(
       borderRadius: BorderRadius.circular(16),
-      child: Image.asset(Assets.profilePicture),
+      child: Image.asset(Assets.pfp),
     );
   }
 }

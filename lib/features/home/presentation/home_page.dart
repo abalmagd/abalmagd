@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
+import 'package:gap/gap.dart';
+import 'package:portfolio/core/constants/assets.dart';
 import 'package:portfolio/core/constants/spacing.dart';
 import 'package:portfolio/shared/presentation/widgets/app_bar.dart';
-import 'package:portfolio/shared/presentation/widgets/brand.dart';
 
 class HomePage extends HookWidget {
   const HomePage({super.key});
@@ -11,30 +12,7 @@ class HomePage extends HookWidget {
   Widget build(BuildContext context) {
     final width = MediaQuery.sizeOf(context).width;
     final scrollController = useScrollController();
-    return const Scaffold(
-      body: CustomScrollView(
-        slivers: [
-          SliverPadding(
-            padding: EdgeInsets.symmetric(horizontal: 85),
-            sliver: SliverAppBar(
-              floating: true,
-              shape: ContinuousRectangleBorder(
-                borderRadius: BorderRadius.vertical(
-                  bottom: Radius.circular(20),
-                ),
-              ),
-              title: Logo(),
-            ),
-          ),
-          SliverToBoxAdapter(
-            child: SizedBox(
-              height: 5000,
-              child: Placeholder(),
-            ),
-          ),
-        ],
-      ),
-    );
+    useEffect(() => scrollController.dispose, []);
     return Scaffold(
       appBar: MyAppBar(scrollController: scrollController),
       extendBodyBehindAppBar: true,
@@ -46,12 +24,36 @@ class HomePage extends HookWidget {
         ),
         physics: const BouncingScrollPhysics(),
         children: const [
-          SizedBox(
-            height: 5000,
-            child: Placeholder(),
-          ),
+          AboutMe(),
         ],
       ),
+    );
+  }
+}
+
+class AboutMe extends StatelessWidget {
+  const AboutMe({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    final width = MediaQuery.sizeOf(context).width;
+    return Column(
+      children: [
+        const Gap(100),
+        Row(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            ClipOval(
+              child: Image.asset(
+                Assets.pfp,
+                fit: BoxFit.cover,
+                width: width * 0.25,
+                height: width * 0.25,
+              ),
+            ),
+          ],
+        ),
+      ],
     );
   }
 }
