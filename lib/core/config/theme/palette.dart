@@ -1,18 +1,14 @@
 import 'package:flutter/material.dart';
 
-class Palette {
-  // region Common
-  static const white = Colors.white;
-  static const black = Colors.black;
-  static const transparent = Colors.transparent;
-  static const primaryColor = Color(0xff7E74F1);
-  static const primaryColorLight = Color(0xffEAE6FE);
+enum Palette {
+  white(Color(0xffFFFFFF)),
+  black(Color(0xff080808)),
+  transparent(Color(0x00000000)),
+  primary(Color(0xff3F8E00)),
+  appBar(Color(0xff1B1B1B)),
+  bodyText(Color(0xff9C9C9C));
 
-  // endregion
+  final Color color;
 
-  // region App (Light Theme)
-  static const scaffoldBackgroundLight = white;
-  static const darkTextColor = Color(0xff232E35);
-  static const greyTextColor = Color(0xff656D72);
-// endregion
+  const Palette(this.color);
 }

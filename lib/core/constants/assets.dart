@@ -4,8 +4,8 @@ class Assets {
   static const translations = 'assets/translations';
 
   // region Icons
-  static const brandLetter = '$icons/brand_letter.svg';
-  static const brandStrokes = '$icons/brand_strokes.svg';
+  static const logoLetter = '$icons/logo_letter.svg';
+  static const logoStrokes = '$icons/logo_strokes.svg';
 
   // endregion
 

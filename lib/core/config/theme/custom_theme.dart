@@ -5,23 +5,22 @@ import 'palette.dart';
 
 class CustomTheme {
   static ThemeData lightTheme(BuildContext context) {
+    final textTheme = Theme.of(context).textTheme;
     return ThemeData(
       useMaterial3: true,
-      colorScheme: ColorScheme.fromSeed(seedColor: Palette.primaryColor),
-      primaryColor: Palette.primaryColor,
-      primaryColorLight: Palette.primaryColorLight,
-      appBarTheme: const AppBarTheme(backgroundColor: Palette.transparent),
-      scaffoldBackgroundColor: Palette.scaffoldBackgroundLight,
+      colorScheme: ColorScheme.fromSeed(seedColor: Palette.primary.color),
+      primaryColor: Palette.primary.color,
+      appBarTheme: AppBarTheme(backgroundColor: Palette.appBar.color),
+      scaffoldBackgroundColor: Palette.black.color,
       textButtonTheme: TextButtonThemeData(
         style: TextButton.styleFrom(
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(8),
-          ),
+          backgroundColor: Palette.transparent.color,
+          textStyle: textTheme.labelMedium,
         ),
       ),
+      elevatedButtonTheme: ElevatedButtonThemeData(),
       textTheme: TextThemes.textTheme(context).apply(
-        bodyColor: Palette.darkTextColor,
-        displayColor: Palette.darkTextColor,
+        bodyColor: Palette.bodyText.color,
       ),
     );
   }

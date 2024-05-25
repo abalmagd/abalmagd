@@ -55,7 +55,7 @@ class MyAppBar extends HookWidget implements PreferredSizeWidget {
             ),
             child: Row(
               children: [
-                const Brand(),
+                const Logo(),
                 Expanded(
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,

@@ -1,15 +1,13 @@
 import 'package:portfolio/core/constants/assets.dart';
 import 'package:portfolio/core/domain/models/person.dart';
 
-/// Data holder class for all of the local data present in this website,
+/// Data holder class for all of the local data present in this web app,
 /// for example: personal photo, projects data, about info/texts.
 class Data {
   static const person = Person(
-    firstName: 'firstName',
+    name: 'firstName',
     description: 'description',
     imagePath: Assets.profilePicture,
-    frontLogoPath: Assets.brandLetter,
-    backLogoPath: Assets.brandStrokes,
-    lastName: 'lastName',
+    logoPath: Assets.logoStrokes,
   );
 }
