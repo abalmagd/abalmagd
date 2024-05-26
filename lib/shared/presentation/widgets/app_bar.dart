@@ -1,4 +1,5 @@
 import 'dart:js' as js;
+
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
@@ -6,8 +7,8 @@ import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:gap/gap.dart';
 import 'package:portfolio/core/config/theme/palette.dart';
-import 'package:portfolio/core/constants/assets.dart';
 import 'package:portfolio/core/constants/spacing.dart';
+import 'package:portfolio/core/domain/data.dart';
 import 'package:portfolio/shared/presentation/widgets/brand.dart';
 
 // TODO: For each of these enum values, add a property to allow scrolling onTap.
@@ -22,20 +23,6 @@ enum AppBarButton {
   final String scrollTo;
 
   const AppBarButton(this.scrollTo);
-}
-
-enum SocialButton {
-  linkedIn(Assets.linkedin, 'https://www.linkedin.com/in/abalmagd/'),
-  github(Assets.github, 'https://github.com/abalmagd'),
-  resume(
-    Assets.doc,
-    'https://drive.google.com/file/d/14Eecw8MfclHq37hYXDmUAqwm2IxU0mb4/view',
-  );
-
-  final String icon;
-  final String url;
-
-  const SocialButton(this.icon, this.url);
 }
 
 class MyAppBar extends HookWidget implements PreferredSizeWidget {
@@ -138,7 +125,7 @@ class MyAppBar extends HookWidget implements PreferredSizeWidget {
                 ),
               ),
               Row(
-                children: SocialButton.values.map(
+                children: Data.person.socialLinks.map(
                   (btn) {
                     return Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 6.0),
