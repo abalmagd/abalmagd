@@ -6,7 +6,6 @@ import 'palette.dart';
 class CustomTheme {
   static ThemeData lightTheme(BuildContext context) {
     final textTheme = Theme.of(context).textTheme;
-    final width = MediaQuery.sizeOf(context).width;
     return ThemeData(
       useMaterial3: true,
       colorScheme: ColorScheme.fromSeed(seedColor: Palette.primary.color),

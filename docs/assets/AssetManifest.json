@@ -1,54 +1,75 @@
 {
-  "assets/fonts/inter/Inter-Bold.ttf": [
-    "assets/fonts/inter/Inter-Bold.ttf"
+  "assets/fonts/Inter/Inter-Bold.ttf": [
+    "assets/fonts/Inter/Inter-Bold.ttf"
   ],
-  "assets/fonts/inter/Inter-ExtraLight.ttf": [
-    "assets/fonts/inter/Inter-ExtraLight.ttf"
+  "assets/fonts/Inter/Inter-Regular.ttf": [
+    "assets/fonts/Inter/Inter-Regular.ttf"
   ],
-  "assets/fonts/inter/Inter-Light.ttf": [
-    "assets/fonts/inter/Inter-Light.ttf"
+  "assets/fonts/Raleway/Raleway-Bold.ttf": [
+    "assets/fonts/Raleway/Raleway-Bold.ttf"
   ],
-  "assets/fonts/inter/Inter-Medium.ttf": [
-    "assets/fonts/inter/Inter-Medium.ttf"
+  "assets/fonts/Raleway/Raleway-ExtraBold.ttf": [
+    "assets/fonts/Raleway/Raleway-ExtraBold.ttf"
   ],
-  "assets/fonts/inter/Inter-Regular.ttf": [
-    "assets/fonts/inter/Inter-Regular.ttf"
+  "assets/icons/app_store.svg": [
+    "assets/icons/app_store.svg"
   ],
-  "assets/fonts/inter/Inter-SemiBold.ttf": [
-    "assets/fonts/inter/Inter-SemiBold.ttf"
+  "assets/icons/clickup.svg": [
+    "assets/icons/clickup.svg"
   ],
-  "assets/fonts/inter/Inter-Thin.ttf": [
-    "assets/fonts/inter/Inter-Thin.ttf"
+  "assets/icons/dart.svg": [
+    "assets/icons/dart.svg"
   ],
-  "assets/fonts/plus_jakarta_sans/PlusJakartaSans-Bold.ttf": [
-    "assets/fonts/plus_jakarta_sans/PlusJakartaSans-Bold.ttf"
+  "assets/icons/doc.svg": [
+    "assets/icons/doc.svg"
   ],
-  "assets/fonts/plus_jakarta_sans/PlusJakartaSans-ExtraBold.ttf": [
-    "assets/fonts/plus_jakarta_sans/PlusJakartaSans-ExtraBold.ttf"
+  "assets/icons/figma.svg": [
+    "assets/icons/figma.svg"
   ],
-  "assets/fonts/plus_jakarta_sans/PlusJakartaSans-ExtraLight.ttf": [
-    "assets/fonts/plus_jakarta_sans/PlusJakartaSans-ExtraLight.ttf"
+  "assets/icons/firebase.svg": [
+    "assets/icons/firebase.svg"
   ],
-  "assets/fonts/plus_jakarta_sans/PlusJakartaSans-Light.ttf": [
-    "assets/fonts/plus_jakarta_sans/PlusJakartaSans-Light.ttf"
+  "assets/icons/flutter.svg": [
+    "assets/icons/flutter.svg"
   ],
-  "assets/fonts/plus_jakarta_sans/PlusJakartaSans-Medium.ttf": [
-    "assets/fonts/plus_jakarta_sans/PlusJakartaSans-Medium.ttf"
+  "assets/icons/g_drive.svg": [
+    "assets/icons/g_drive.svg"
   ],
-  "assets/fonts/plus_jakarta_sans/PlusJakartaSans-Regular.ttf": [
-    "assets/fonts/plus_jakarta_sans/PlusJakartaSans-Regular.ttf"
+  "assets/icons/g_maps.svg": [
+    "assets/icons/g_maps.svg"
   ],
-  "assets/fonts/plus_jakarta_sans/PlusJakartaSans-SemiBold.ttf": [
-    "assets/fonts/plus_jakarta_sans/PlusJakartaSans-SemiBold.ttf"
+  "assets/icons/git.svg": [
+    "assets/icons/git.svg"
   ],
-  "assets/icons/brand_letter.svg": [
-    "assets/icons/brand_letter.svg"
+  "assets/icons/github.svg": [
+    "assets/icons/github.svg"
   ],
-  "assets/icons/brand_strokes.svg": [
-    "assets/icons/brand_strokes.svg"
+  "assets/icons/github_octo.svg": [
+    "assets/icons/github_octo.svg"
   ],
-  "assets/images/profile_picture.png": [
-    "assets/images/profile_picture.png"
+  "assets/icons/linkedin.svg": [
+    "assets/icons/linkedin.svg"
+  ],
+  "assets/icons/logo_strokes.svg": [
+    "assets/icons/logo_strokes.svg"
+  ],
+  "assets/icons/m_azure.svg": [
+    "assets/icons/m_azure.svg"
+  ],
+  "assets/icons/onesignal.svg": [
+    "assets/icons/onesignal.svg"
+  ],
+  "assets/icons/play_store.svg": [
+    "assets/icons/play_store.svg"
+  ],
+  "assets/icons/postman.svg": [
+    "assets/icons/postman.svg"
+  ],
+  "assets/icons/supabase.svg": [
+    "assets/icons/supabase.svg"
+  ],
+  "assets/images/pfp.jpg": [
+    "assets/images/pfp.jpg"
   ],
   "assets/translations/ar.json": [
     "assets/translations/ar.json"

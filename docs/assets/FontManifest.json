@@ -8,35 +8,15 @@
     ]
   },
   {
-    "family": "Plus Jakarta Sans",
+    "family": "Raleway",
     "fonts": [
       {
-        "weight": 200,
-        "asset": "assets/fonts/plus_jakarta_sans/PlusJakartaSans-ExtraLight.ttf"
-      },
-      {
-        "weight": 300,
-        "asset": "assets/fonts/plus_jakarta_sans/PlusJakartaSans-Light.ttf"
-      },
-      {
-        "weight": 400,
-        "asset": "assets/fonts/plus_jakarta_sans/PlusJakartaSans-Regular.ttf"
-      },
-      {
-        "weight": 500,
-        "asset": "assets/fonts/plus_jakarta_sans/PlusJakartaSans-Medium.ttf"
-      },
-      {
-        "weight": 600,
-        "asset": "assets/fonts/plus_jakarta_sans/PlusJakartaSans-SemiBold.ttf"
-      },
-      {
         "weight": 700,
-        "asset": "assets/fonts/plus_jakarta_sans/PlusJakartaSans-Bold.ttf"
+        "asset": "assets/fonts/Raleway/Raleway-Bold.ttf"
       },
       {
         "weight": 800,
-        "asset": "assets/fonts/plus_jakarta_sans/PlusJakartaSans-ExtraBold.ttf"
+        "asset": "assets/fonts/Raleway/Raleway-ExtraBold.ttf"
       }
     ]
   },
@@ -44,32 +24,12 @@
     "family": "Inter",
     "fonts": [
       {
-        "weight": 100,
-        "asset": "assets/fonts/inter/Inter-Thin.ttf"
-      },
-      {
-        "weight": 200,
-        "asset": "assets/fonts/inter/Inter-ExtraLight.ttf"
-      },
-      {
-        "weight": 300,
-        "asset": "assets/fonts/inter/Inter-Light.ttf"
-      },
-      {
         "weight": 400,
-        "asset": "assets/fonts/inter/Inter-Regular.ttf"
-      },
-      {
-        "weight": 500,
-        "asset": "assets/fonts/inter/Inter-Medium.ttf"
-      },
-      {
-        "weight": 600,
-        "asset": "assets/fonts/inter/Inter-SemiBold.ttf"
+        "asset": "assets/fonts/Inter/Inter-Regular.ttf"
       },
       {
         "weight": 700,
-        "asset": "assets/fonts/inter/Inter-Bold.ttf"
+        "asset": "assets/fonts/Inter/Inter-Bold.ttf"
       }
     ]
   }
