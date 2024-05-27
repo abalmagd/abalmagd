@@ -2,6 +2,7 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:gap/gap.dart';
+import 'package:marqueer/marqueer.dart';
 import 'package:portfolio/core/constants/assets.dart';
 import 'package:portfolio/core/constants/localization.dart';
 import 'package:portfolio/core/constants/spacing.dart';
@@ -69,16 +70,18 @@ class AboutMe extends HookWidget {
           ),
           const Gap(60),
           Text(Localization.workedWith.hardcoded, style: textTheme.bodyMedium),
-          SizedBox(
-            height: 60,
-            child: ListView.separated(
-              scrollDirection: Axis.horizontal,
-              separatorBuilder: (_, __) => const Gap(20),
-              itemBuilder: (_, index) {
-                final i = index % Skill.values.length;
-                return SkillCard(icon: Skill.values[i].icon);
-              },
-              itemCount: Skill.values.length,
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 20.0),
+            child: SizedBox(
+              height: 60,
+              child: Marqueer.builder(
+                pps: 60,
+                itemBuilder: (_, index) {
+                  return SkillCard(skill: Skill.values[index]);
+                },
+                separatorBuilder: (_, __) => const Gap(20),
+                itemCount: Skill.values.length,
+              ),
             ),
           ),
         ],
