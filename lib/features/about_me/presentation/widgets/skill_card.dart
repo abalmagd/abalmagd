@@ -20,9 +20,10 @@ class SkillCard extends HookWidget {
       onHover: (over) => isHovering.value = over,
       enableFeedback: false,
       mouseCursor: MouseCursor.uncontrolled,
-      child: Container(
+      child: AnimatedContainer(
         height: 60,
-        width: 160,
+        width: isHovering.value ? 160 : 80,
+        duration: const Duration(milliseconds: 200),
         padding: const EdgeInsets.all(12),
         decoration: BoxDecoration(
           color: isHovering.value ? Colors.white : null,
@@ -34,12 +35,16 @@ class SkillCard extends HookWidget {
         child: Stack(
           alignment: Alignment.center,
           children: [
-            AnimatedOpacity(
-              opacity: isHovering.value ? 1 : 0,
-              duration: const Duration(milliseconds: 500),
-              child: Text(
-                skill.name,
-                style: textTheme.bodySmall?.copyWith(color: Colors.black),
+            Padding(
+              padding: const EdgeInsets.only(left: 40.0),
+              child: AnimatedOpacity(
+                opacity: isHovering.value ? 1 : 0,
+                duration: const Duration(milliseconds: 500),
+                child: Text(
+                  skill.name,
+                  textAlign: TextAlign.center,
+                  style: textTheme.bodySmall?.copyWith(color: Colors.black),
+                ),
               ),
             ),
             AnimatedAlign(
@@ -49,8 +54,8 @@ class SkillCard extends HookWidget {
               child: SvgPicture.asset(
                 skill.icon,
                 fit: BoxFit.contain,
-                height: 32,
-                width: 32,
+                height: 40,
+                width: 40,
               ),
             ),
           ],

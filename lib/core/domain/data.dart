@@ -1,4 +1,5 @@
 import 'package:portfolio/core/constants/assets.dart';
+import 'package:portfolio/core/constants/localization.dart';
 import 'package:portfolio/core/domain/models/person.dart';
 
 /// Data holder class for all of the local data present in this web app,
@@ -12,18 +13,18 @@ class Data {
     socialLinks: [
       SocialLink(
         url: 'https://www.linkedin.com/in/abalmagd/',
-        name: 'LinkedIn',
+        name: Localization.linkedIn,
         icon: Assets.linkedin,
       ),
       SocialLink(
         url: 'https://github.com/abalmagd',
-        name: 'Github',
+        name: Localization.github,
         icon: Assets.github,
       ),
       SocialLink(
         url:
             'https://drive.google.com/file/d/14Eecw8MfclHq37hYXDmUAqwm2IxU0mb4/view',
-        name: 'Resume',
+        name: Localization.resume,
         icon: Assets.doc,
       ),
     ],

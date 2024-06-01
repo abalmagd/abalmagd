@@ -9,7 +9,6 @@ import 'package:portfolio/core/constants/spacing.dart';
 import 'package:portfolio/core/domain/data.dart';
 import 'package:portfolio/features/about_me/domain/models/skill.dart';
 import 'package:portfolio/features/about_me/presentation/widgets/skill_card.dart';
-import 'package:portfolio/utils/extensions/string_extensions.dart';
 
 class AboutMe extends HookWidget {
   const AboutMe({super.key});
@@ -53,7 +52,7 @@ class AboutMe extends HookWidget {
                       child: Row(
                         mainAxisSize: MainAxisSize.min,
                         children: [
-                          Text(Localization.letsGetStarted.hardcoded),
+                          Text(Localization.letsGetStarted.tr()),
                           const Gap(12),
                           const Icon(Icons.chevron_right_rounded),
                         ],
@@ -69,7 +68,7 @@ class AboutMe extends HookWidget {
             ],
           ),
           const Gap(60),
-          Text(Localization.workedWith.hardcoded, style: textTheme.bodyMedium),
+          Text(Localization.workedWith.tr(), style: textTheme.bodyMedium),
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 20.0),
             child: SizedBox(
