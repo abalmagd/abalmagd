@@ -1,31 +1,31 @@
-import 'package:portfolio/core/constants/assets.dart';
-import 'package:portfolio/core/constants/localization.dart';
-import 'package:portfolio/core/domain/models/person.dart';
+import 'constants/assets.dart';
+import 'models/person.dart';
 
-/// Data holder class for all of the local data present in this web app,
-/// for example: personal photo, projects data, about info/texts.
+/// Data holder class for all of the local data present.
+/// TODO: Fill data
 class Data {
   static const person = Person(
     name: 'name',
+    about: 'about',
     description: 'description',
-    imagePath: Assets.pfp,
-    logoPath: Assets.logoStrokes,
+    image: Assets.pfp,
+    logo: Assets.logo,
     socialLinks: [
       SocialLink(
         url: 'https://www.linkedin.com/in/abalmagd/',
-        name: Localization.linkedIn,
-        icon: Assets.linkedin,
+        name: '',
+        icon: '',
       ),
       SocialLink(
         url: 'https://github.com/abalmagd',
-        name: Localization.github,
-        icon: Assets.github,
+        name: '',
+        icon: '',
       ),
       SocialLink(
         url:
             'https://drive.google.com/file/d/14Eecw8MfclHq37hYXDmUAqwm2IxU0mb4/view',
-        name: Localization.resume,
-        icon: Assets.doc,
+        name: '',
+        icon: '',
       ),
     ],
   );

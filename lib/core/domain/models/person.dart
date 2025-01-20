@@ -1,16 +1,18 @@
 class Person {
   const Person({
     required this.name,
-    required this.description,
-    required this.imagePath,
-    required this.logoPath,
+    required this.about,
+    required this.image,
+    required this.logo,
     required this.socialLinks,
+    this.description,
   });
 
   final String name;
-  final String description;
-  final String imagePath;
-  final String logoPath;
+  final String about;
+  final String? description;
+  final String image;
+  final String logo;
   final List<SocialLink> socialLinks;
 }
 

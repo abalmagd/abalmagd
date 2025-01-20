@@ -1,15 +1,8 @@
 {
+  "aboutMe": "عنّي",
   "services": "خدماتي",
-  "career": "الوظائف",
-  "aboutMe": "عني",
-  "projects": "المشاريع",
   "testimonials": "الشهادات",
-  "contactMe": "تواصل معي",
-  "name": "محمود ابوالمجد",
-  "resume": "Resume/CV",
-  "linkedIn": "LinkedIn",
-  "github": "Github",
-  "letsGetStarted": "لنبدأ!",
-  "workedWith": "عملت بـ",
-  "description": "مطور فلاتر بما يزيد عن سنتان من الخبرة في العمل كمطور منفرد او جزء من شركة. عندي شغف تجاه المشاريع المميزة واحب دائما العمل علي الواجهات التي تفرض تحدي."
+  "projects": "المشاريع",
+  "contactMe": "اتصل بي",
+  "name": "الإسم"
 }
