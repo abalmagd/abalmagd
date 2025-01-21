@@ -5,9 +5,10 @@ import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:gap/gap.dart';
 import 'package:portfolio/core/domain/localization/locale_keys.dart';
 import 'package:portfolio/core/presentation/widgets/glass_container.dart';
+import 'package:portfolio/core/presentation/widgets/locale_switch.dart';
 import 'package:portfolio/core/presentation/widgets/portfolio_button.dart';
+import 'package:portfolio/core/presentation/widgets/responsive_builder.dart';
 import 'package:portfolio/core/presentation/widgets/theme_switch.dart';
-import 'package:sizer/sizer.dart';
 
 import 'brand.dart';
 
@@ -29,7 +30,7 @@ class PortfolioAppBar extends HookWidget implements PreferredSizeWidget {
   final ScrollController scrollController;
 
   @override
-  Size get preferredSize => const Size.fromHeight(kToolbarHeight * 2);
+  Size get preferredSize => const Size.fromHeight(kToolbarHeight * 5);
 
   void scrollListener(AnimationController animationController) {
     if (scrollController.offset <= kToolbarHeight ||
@@ -77,44 +78,55 @@ class PortfolioAppBar extends HookWidget implements PreferredSizeWidget {
       position: offsetAnimation,
       child: GlassContainer(
         color: theme.colorScheme.surface.withValues(alpha: 0.35),
-        padding: EdgeInsets.symmetric(vertical: 0.1.dp, horizontal: 6.w),
+        padding: EdgeInsets.symmetric(vertical: 16, horizontal: 24),
         child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            const Logo(showName: true),
-            Gap(5.w),
+            Logo(showName: true),
             Expanded(
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: AppBarButton.values.map((btn) {
-                  return TextButton(
-                    onPressed: () {
-                      switch (btn) {
-                        case AppBarButton.aboutMe:
-                        // TODO: Handle this case.
-                        case AppBarButton.services:
-                        // TODO: Handle this case.
-                        case AppBarButton.testimonials:
-                        // TODO: Handle this case.
-                        case AppBarButton.projects:
-                        // TODO: Handle this case.
-                        case AppBarButton.contactMe:
-                        // TODO: Handle this case.
-                      }
-                    },
-                    child: Text(
-                      btn.title.tr(),
-                      style: theme.textTheme.labelSmall,
-                    ),
-                  );
-                }).toList(),
+              child: ResponsiveBuilder(
+                onDesktop: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  spacing: 6,
+                  children: AppBarButton.values.map((btn) {
+                    return TextButton(
+                      onPressed: () {
+                        switch (btn) {
+                          case AppBarButton.aboutMe:
+                          // TODO: Handle this case.
+                          case AppBarButton.services:
+                          // TODO: Handle this case.
+                          case AppBarButton.testimonials:
+                          // TODO: Handle this case.
+                          case AppBarButton.projects:
+                          // TODO: Handle this case.
+                          case AppBarButton.contactMe:
+                          // TODO: Handle this case.
+                        }
+                      },
+                      child: Text(
+                        btn.title.tr(),
+                        style: theme.textTheme.labelSmall,
+                      ),
+                    );
+                  }).toList(),
+                ),
               ),
             ),
-            Gap(5.w),
             ThemeSwitch(),
-            Gap(5.w),
-            PortfolioButton(
-              onPressed: () {},
-              label: LocaleKeys.downloadCV.tr(),
+            LocaleSwitch(),
+            Gap(16),
+            ResponsiveBuilder(
+              onMobile: IconButton(
+                // TODO: Implement
+                onPressed: () {},
+                icon: Icon(Icons.menu_rounded),
+              ),
+              onDesktop: PortfolioButton(
+                // TODO: Implement
+                onPressed: () {},
+                label: LocaleKeys.downloadCV.tr(),
+              ),
             ),
           ],
         ),

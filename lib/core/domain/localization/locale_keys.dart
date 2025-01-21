@@ -7,7 +7,6 @@ abstract class LocaleKeys {
   static const projects = 'projects';
   static const contactMe = 'contactMe';
   static const name = 'name';
-
-  // TODO: Add localization
   static const downloadCV = 'downloadCV';
+  static const languages = 'languages';
 }

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:sizer/sizer.dart';
 
 class TextThemes {
   static TextTheme textTheme(BuildContext context) {
@@ -7,37 +6,35 @@ class TextThemes {
     return TextTheme(
       // region Titles
       titleLarge: theme.textTheme.titleLarge?.copyWith(
-        fontSize: 50.sp,
+        fontSize: 100,
         fontWeight: FontWeight.bold,
       ),
       titleMedium: theme.textTheme.titleMedium?.copyWith(
-        fontSize: 32.sp,
+        fontSize: 64,
         fontWeight: FontWeight.w600,
       ),
       // endregion
       // region Body
       bodyLarge: theme.textTheme.bodyLarge?.copyWith(
-        fontSize: 12.sp,
+        fontSize: 24,
         fontWeight: FontWeight.normal,
       ),
       bodyMedium: theme.textTheme.bodyMedium?.copyWith(
-        fontSize: 9.sp,
+        fontSize: 18,
         fontWeight: FontWeight.w400,
       ),
       // endregion
       // region Labels
       labelLarge: theme.textTheme.labelLarge?.copyWith(
-        fontSize: 16.sp,
+        fontSize: 32,
         fontWeight: FontWeight.w600,
       ),
-      // App bar buttons
       labelMedium: theme.textTheme.labelMedium?.copyWith(
-        fontSize: 12.sp,
+        fontSize: 16,
         fontWeight: FontWeight.w600,
       ),
-      // All buttons & text field titles
       labelSmall: theme.textTheme.labelSmall?.copyWith(
-        fontSize: 10.sp,
+        fontSize: 14,
         fontWeight: FontWeight.normal,
       ),
       // endregion

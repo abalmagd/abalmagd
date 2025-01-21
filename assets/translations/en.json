@@ -1,8 +1,12 @@
 {
+  "en": "English",
+  "ar": "عربي",
+  "languages": "Languages",
   "aboutMe": "About Me",
   "services": "Services",
   "testimonials": "Testimonials",
   "projects": "Projects",
   "contactMe": "Contact Me",
-  "name": "Name"
+  "name": "Name",
+  "downloadCV": "Download CV"
 }

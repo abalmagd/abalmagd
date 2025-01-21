@@ -30,7 +30,6 @@ dependencies:
   flutter_hooks: ^0.20.5
   hooks_riverpod: ^2.6.1
   shared_preferences: ^2.3.5
-  sizer: 3.0.5
   gap: ^3.0.1
   intl: ^0.19.0
   easy_localization: ^3.0.7
@@ -58,4 +57,13 @@ flutter:
         - asset: assets/fonts/Poppins/Poppins-SemiBold.ttf
           weight: 600
         - asset: assets/fonts/Poppins/Poppins-Regular.ttf
+          weight: 400
+
+    - family: Cairo
+      fonts:
+        - asset: assets/fonts/Cairo/Cairo-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Cairo/Cairo-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Cairo/Cairo-Regular.ttf
           weight: 400

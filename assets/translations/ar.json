@@ -1,8 +1,12 @@
 {
+  "en": "English",
+  "ar": "عربي",
+  "languages": "اللغات",
   "aboutMe": "عنّي",
   "services": "خدماتي",
   "testimonials": "الشهادات",
   "projects": "المشاريع",
   "contactMe": "اتصل بي",
-  "name": "الإسم"
+  "name": "الإسم",
+  "downloadCV": "تحميل CV"
 }

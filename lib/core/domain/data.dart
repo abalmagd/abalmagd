@@ -5,7 +5,7 @@ import 'models/person.dart';
 /// TODO: Fill data
 class Data {
   static const person = Person(
-    name: 'name',
+    name: 'Mahmoud\nAbulmagd',
     about: 'about',
     description: 'description',
     image: Assets.pfp,

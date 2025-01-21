@@ -7,7 +7,6 @@ import 'package:portfolio/core/domain/localization/localization.dart';
 import 'package:portfolio/core/presentation/providers/theme_provider.dart';
 import 'package:portfolio/features/home/presentation/home_page.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:sizer/sizer.dart';
 
 import 'core/domain/constants/assets.dart';
 import 'core/domain/data.dart';
@@ -19,9 +18,10 @@ Future<void> main() async {
   final prefs = await SharedPreferences.getInstance();
   runApp(
     EasyLocalization(
-      supportedLocales: Localization.supportedLocales,
+      supportedLocales:
+          Localization.supportedLocales.map((locale) => locale.locale).toList(),
       path: Assets.translations,
-      fallbackLocale: const Locale('en'),
+      fallbackLocale: PortfolioLocale.en.locale,
       useOnlyLangCode: true,
       child: ProviderScope(
         overrides: [sharedPrefsProvider.overrideWithValue(prefs)],
@@ -36,24 +36,20 @@ class Portfolio extends ConsumerWidget with CustomTheme {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    return Sizer(
-      builder: (context, orientation, screenType) {
-        return MaterialApp(
-          title: Data.person.name,
-          debugShowCheckedModeBanner: false,
-          localizationsDelegates: context.localizationDelegates,
-          supportedLocales: context.supportedLocales,
-          locale: context.locale,
-          theme: lightTheme(context),
-          darkTheme: darkTheme(context),
-          themeMode: ref.watch(themeProvider),
-          home: HomePage(),
-          scrollBehavior: ScrollConfiguration.of(context).copyWith(
-            physics: const BouncingScrollPhysics(),
-            dragDevices: PointerDeviceKind.values.toSet(),
-          ),
-        );
-      },
+    return MaterialApp(
+      title: Data.person.name,
+      debugShowCheckedModeBanner: false,
+      localizationsDelegates: context.localizationDelegates,
+      supportedLocales: context.supportedLocales,
+      locale: context.locale,
+      theme: lightTheme(context),
+      darkTheme: darkTheme(context),
+      themeMode: ref.watch(themeProvider),
+      home: HomePage(),
+      scrollBehavior: ScrollConfiguration.of(context).copyWith(
+        physics: const BouncingScrollPhysics(),
+        dragDevices: PointerDeviceKind.values.toSet(),
+      ),
     );
   }
 }
