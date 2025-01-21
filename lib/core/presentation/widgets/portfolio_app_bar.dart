@@ -6,6 +6,7 @@ import 'package:gap/gap.dart';
 import 'package:portfolio/core/domain/localization/locale_keys.dart';
 import 'package:portfolio/core/presentation/widgets/glass_container.dart';
 import 'package:portfolio/core/presentation/widgets/portfolio_button.dart';
+import 'package:portfolio/core/presentation/widgets/theme_switch.dart';
 import 'package:sizer/sizer.dart';
 
 import 'brand.dart';
@@ -76,38 +77,44 @@ class PortfolioAppBar extends HookWidget implements PreferredSizeWidget {
       position: offsetAnimation,
       child: GlassContainer(
         color: theme.colorScheme.surface.withValues(alpha: 0.35),
-        padding: EdgeInsets.symmetric(vertical: 16, horizontal: 6.w),
+        padding: EdgeInsets.symmetric(vertical: 0.1.dp, horizontal: 6.w),
         child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const Logo(showName: true),
-            MaxGap(5.w),
-            ...AppBarButton.values.map((btn) {
-              return TextButton(
-                onPressed: () {
-                  switch (btn) {
-                    case AppBarButton.aboutMe:
-                    // TODO: Handle this case.
-                    case AppBarButton.services:
-                    // TODO: Handle this case.
-                    case AppBarButton.testimonials:
-                    // TODO: Handle this case.
-                    case AppBarButton.projects:
-                    // TODO: Handle this case.
-                    case AppBarButton.contactMe:
-                    // TODO: Handle this case.
-                  }
-                },
-                child: Text(
-                  btn.title.tr(),
-                  style: theme.textTheme.labelSmall,
-                ),
-              );
-            }),
-            MaxGap(5.w),
+            Gap(5.w),
+            Expanded(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: AppBarButton.values.map((btn) {
+                  return TextButton(
+                    onPressed: () {
+                      switch (btn) {
+                        case AppBarButton.aboutMe:
+                        // TODO: Handle this case.
+                        case AppBarButton.services:
+                        // TODO: Handle this case.
+                        case AppBarButton.testimonials:
+                        // TODO: Handle this case.
+                        case AppBarButton.projects:
+                        // TODO: Handle this case.
+                        case AppBarButton.contactMe:
+                        // TODO: Handle this case.
+                      }
+                    },
+                    child: Text(
+                      btn.title.tr(),
+                      style: theme.textTheme.labelSmall,
+                    ),
+                  );
+                }).toList(),
+              ),
+            ),
+            Gap(5.w),
+            ThemeSwitch(),
+            Gap(5.w),
             PortfolioButton(
               onPressed: () {},
-              label: 'Download CV',
+              label: LocaleKeys.downloadCV.tr(),
             ),
           ],
         ),

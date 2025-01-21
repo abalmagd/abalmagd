@@ -14,17 +14,16 @@ class HomePage extends HookWidget {
       body: ListView(
         controller: scrollController,
         children: [
-          Image.asset(
-            'assets/images/pfp2.jpg',
-            height: 2000,
-            fit: BoxFit.fitHeight,
-          ),
-          Container(
-            color: Colors.blueGrey,
-            height: 10000,
-            width: double.infinity,
-            child: Placeholder(),
-          ),
+          Placeholder(),
+          Placeholder(),
+          Placeholder(),
+          Placeholder(),
+          Placeholder(),
+          Placeholder(),
+          Placeholder(),
+          Placeholder(),
+          Placeholder(),
+          Placeholder(),
         ],
       ),
     );

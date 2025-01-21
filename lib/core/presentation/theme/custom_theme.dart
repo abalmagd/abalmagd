@@ -21,11 +21,6 @@ mixin CustomTheme {
       ),
       dividerColor: Palette.dividerLight,
       dividerTheme: DividerThemeData(color: Palette.dividerLight),
-      textButtonTheme: TextButtonThemeData(
-        style: TextButton.styleFrom(
-          padding: EdgeInsets.symmetric(horizontal: 0.1.dp),
-        ),
-      ),
       filledButtonTheme: FilledButtonThemeData(
         style: FilledButton.styleFrom(
           shape: RoundedRectangleBorder(
@@ -34,6 +29,7 @@ mixin CustomTheme {
           padding: EdgeInsets.symmetric(horizontal: 0.1.dp),
         ),
       ),
+      iconTheme: IconThemeData(color: Palette.black),
     );
   }
 
@@ -53,20 +49,15 @@ mixin CustomTheme {
       ),
       dividerColor: Palette.dividerDark,
       dividerTheme: DividerThemeData(color: Palette.dividerDark),
-      textButtonTheme: TextButtonThemeData(
-        style: TextButton.styleFrom(
-          padding: EdgeInsets.symmetric(horizontal: 0.1.dp),
-          splashFactory: NoSplash.splashFactory,
-          overlayColor: Palette.transparent,
-        ),
-      ),
       filledButtonTheme: FilledButtonThemeData(
         style: FilledButton.styleFrom(
           shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(0.05.dp)),
+            borderRadius: BorderRadius.circular(0.05.dp),
+          ),
           padding: EdgeInsets.symmetric(horizontal: 0.1.dp),
         ),
       ),
+      iconTheme: IconThemeData(color: Palette.white),
     );
   }
 }
