@@ -13,5 +13,12 @@
   "downloadCV": "Download CV",
   "hiIam": "Hi, I am",
   "jobTitle": "Flutter Developer",
-  "hireMe": "Hire Me"
+  "hireMe": "Hire Me",
+  "mobileApp": "Mobile Apps",
+  "mobileAppDesc": "Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium. Turpis tempus pharetra",
+  "maintenance": "Maintenance",
+  "maintenanceDesc": "Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium. Turpis tempus pharetra",
+  "webApp": "Web Apps",
+  "webAppDesc": "Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium. Turpis tempus pharetra",
+  "servicesDesc": "Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium. Turpis tempus pharetra"
 }

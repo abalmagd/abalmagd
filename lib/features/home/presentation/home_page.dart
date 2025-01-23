@@ -3,6 +3,7 @@ import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:gap/gap.dart';
 import 'package:portfolio/core/presentation/widgets/portfolio_app_bar.dart';
 import 'package:portfolio/features/home/presentation/views/intro_view.dart';
+import 'package:portfolio/features/home/presentation/views/services_view.dart';
 
 class HomePage extends HookWidget {
   const HomePage({super.key});
@@ -22,7 +23,8 @@ class HomePage extends HookWidget {
         ),
         children: [
           const IntroView(),
-          const Gap(120),
+          const Gap(60),
+          const ServicesView(),
           Text(
             'Work In Progress',
             style: Theme.of(context).textTheme.titleMedium,

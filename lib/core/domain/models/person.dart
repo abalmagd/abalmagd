@@ -1,3 +1,5 @@
+import 'package:portfolio/core/domain/models/service.dart';
+
 class Person {
   const Person({
     required this.name,
@@ -8,6 +10,7 @@ class Person {
     required this.jobTitle,
     required this.intro,
     required this.resumeUrl,
+    required this.services,
   });
 
   final String name;
@@ -18,6 +21,7 @@ class Person {
   final String jobTitle;
   final String resumeUrl;
   final List<SocialLink> socialLinks;
+  final List<PortfolioService> services;
 }
 
 class SocialLink {

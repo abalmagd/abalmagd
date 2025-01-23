@@ -14,4 +14,11 @@ abstract class LocaleKeys {
   static const hiIam = 'hiIam';
   static const jobTitle = 'jobTitle';
   static const hireMe = 'hireMe';
+  static const mobileApp = 'mobileApp';
+  static const mobileAppDesc = 'mobileAppDesc';
+  static const maintenance = 'maintenance';
+  static const maintenanceDesc = 'maintenanceDesc';
+  static const webApp = 'webApp';
+  static const webAppDesc = 'webAppDesc';
+  static const servicesDesc = 'servicesDesc';
 }
