@@ -25,14 +25,14 @@ mixin CustomTheme {
         displayColor: Palette.black,
       ),
       dividerColor: Palette.dividerLight,
-      dividerTheme: DividerThemeData(color: Palette.dividerLight),
+      dividerTheme: const DividerThemeData(color: Palette.dividerLight),
       filledButtonTheme: FilledButtonThemeData(
         style: FilledButton.styleFrom(
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
-          padding: EdgeInsets.symmetric(vertical: 12, horizontal: 16),
+          padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 16),
         ),
       ),
-      iconTheme: IconThemeData(color: Palette.black),
+      iconTheme: const IconThemeData(color: Palette.black),
     );
   }
 
@@ -55,14 +55,14 @@ mixin CustomTheme {
         displayColor: Palette.white,
       ),
       dividerColor: Palette.dividerDark,
-      dividerTheme: DividerThemeData(color: Palette.dividerDark),
+      dividerTheme: const DividerThemeData(color: Palette.dividerDark),
       filledButtonTheme: FilledButtonThemeData(
         style: FilledButton.styleFrom(
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
-          padding: EdgeInsets.symmetric(vertical: 12, horizontal: 16),
+          padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 16),
         ),
       ),
-      iconTheme: IconThemeData(color: Palette.white),
+      iconTheme: const IconThemeData(color: Palette.white),
     );
   }
 }

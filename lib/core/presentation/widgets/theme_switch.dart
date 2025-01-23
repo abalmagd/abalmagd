@@ -11,7 +11,7 @@ class ThemeSwitch extends ConsumerWidget {
       onPressed: () => ref
           .read(themeProvider.notifier)
           .changeThemeMode(MediaQuery.platformBrightnessOf(context)),
-      icon: Icon(Icons.dark_mode_rounded),
+      icon: const Icon(Icons.dark_mode_rounded),
     );
   }
 }

@@ -17,7 +17,7 @@ class Logo extends StatelessWidget {
   final bool showIcon;
   final bool showIconGlow;
   final bool showName;
-  final Widget? customName;
+  final String? customName;
 
   @override
   Widget build(BuildContext context) {
@@ -44,12 +44,11 @@ class Logo extends StatelessWidget {
             ),
           ),
         if (showName) ...[
-          Gap(14),
-          customName ??
-              Text(
-                Data.person.name.tr(),
-                style: theme.textTheme.labelMedium,
-              ),
+          const Gap(14),
+          Text(
+            customName ?? Data.person.name.tr(),
+            style: theme.textTheme.labelMedium,
+          ),
         ],
       ],
     );

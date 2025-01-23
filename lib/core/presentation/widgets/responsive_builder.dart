@@ -1,5 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:portfolio/core/domain/constants/constants.dart';
 
 class ResponsiveBuilder extends StatelessWidget {
   const ResponsiveBuilder({
@@ -7,8 +8,8 @@ class ResponsiveBuilder extends StatelessWidget {
     this.onMobile,
     this.onTablet,
     this.onDesktop,
-    this.mobileBreakpoint = 500,
-    this.desktopBreakpoint = 900,
+    this.mobileBreakpoint,
+    this.desktopBreakpoint,
     this.debugCallback,
   }) : assert(
           onMobile != null || onTablet != null || onDesktop != null,
@@ -18,9 +19,9 @@ class ResponsiveBuilder extends StatelessWidget {
   final Widget? onMobile;
   final Widget? onTablet;
   final Widget? onDesktop;
-  final double mobileBreakpoint;
-  final double desktopBreakpoint;
-  final Function(BoxConstraints constraints)? debugCallback;
+  final double? mobileBreakpoint;
+  final double? desktopBreakpoint;
+  final Function(BoxConstraints constraints, double width)? debugCallback;
 
   @override
   Widget build(BuildContext context) {
@@ -28,13 +29,19 @@ class ResponsiveBuilder extends StatelessWidget {
     return LayoutBuilder(
       builder: (context, constraints) {
         if (kDebugMode && debugCallback != null) {
-          debugCallback!(constraints);
+          debugCallback!(constraints, width);
         }
 
-        if (width <= mobileBreakpoint && onMobile != null) return onMobile!;
-        if (width >= desktopBreakpoint && onDesktop != null) return onDesktop!;
+        if (width <= (mobileBreakpoint ?? Constants.mobileBreakpoint) &&
+            onMobile != null) {
+          return onMobile!;
+        }
+        if (width >= (desktopBreakpoint ?? Constants.desktopBreakpoint) &&
+            onDesktop != null) {
+          return onDesktop!;
+        }
 
-        return onTablet ?? onMobile ?? SizedBox.shrink();
+        return onTablet ?? onMobile ?? const SizedBox.shrink();
       },
     );
   }

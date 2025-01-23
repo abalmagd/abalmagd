@@ -25,7 +25,7 @@ Future<void> main() async {
       useOnlyLangCode: true,
       child: ProviderScope(
         overrides: [sharedPrefsProvider.overrideWithValue(prefs)],
-        child: Portfolio(),
+        child: const Portfolio(),
       ),
     ),
   );
@@ -45,7 +45,7 @@ class Portfolio extends ConsumerWidget with CustomTheme {
       theme: lightTheme(context),
       darkTheme: darkTheme(context),
       themeMode: ref.watch(themeProvider),
-      home: HomePage(),
+      home: const HomePage(),
       scrollBehavior: ScrollConfiguration.of(context).copyWith(
         physics: const BouncingScrollPhysics(),
         dragDevices: PointerDeviceKind.values.toSet(),

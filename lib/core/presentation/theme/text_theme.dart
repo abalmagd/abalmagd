@@ -15,22 +15,18 @@ class TextThemes {
       ),
       // endregion
       // region Body
-      bodyLarge: theme.textTheme.bodyLarge?.copyWith(
-        fontSize: 24,
-        fontWeight: FontWeight.normal,
-      ),
       bodyMedium: theme.textTheme.bodyMedium?.copyWith(
-        fontSize: 18,
-        fontWeight: FontWeight.w400,
+        fontSize: 16,
+        fontWeight: FontWeight.normal,
       ),
       // endregion
       // region Labels
       labelLarge: theme.textTheme.labelLarge?.copyWith(
-        fontSize: 32,
-        fontWeight: FontWeight.w600,
+        fontSize: 22,
+        fontWeight: FontWeight.bold,
       ),
       labelMedium: theme.textTheme.labelMedium?.copyWith(
-        fontSize: 16,
+        fontSize: 18,
         fontWeight: FontWeight.w600,
       ),
       labelSmall: theme.textTheme.labelSmall?.copyWith(

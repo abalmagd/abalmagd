@@ -5,10 +5,12 @@ class Assets {
 
   // region Icons
   static const logo = '$icons/logo.svg';
+  static const linkedin = '$icons/linkedin.svg';
+  static const github = '$icons/github.svg';
 
   // endregion
 
   // region Images
-  static const pfp = '$images/pfp.jpg';
+  static const pfp = '$images/pfp.png';
 // endregion
 }

@@ -3,7 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:gap/gap.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:portfolio/core/domain/data.dart';
 import 'package:portfolio/core/domain/localization/locale_keys.dart';
+import 'package:portfolio/core/presentation/providers/core_controller_provider.dart';
 import 'package:portfolio/core/presentation/widgets/glass_container.dart';
 import 'package:portfolio/core/presentation/widgets/locale_switch.dart';
 import 'package:portfolio/core/presentation/widgets/portfolio_button.dart';
@@ -78,11 +81,14 @@ class PortfolioAppBar extends HookWidget implements PreferredSizeWidget {
       position: offsetAnimation,
       child: GlassContainer(
         color: theme.colorScheme.surface.withValues(alpha: 0.35),
-        padding: EdgeInsets.symmetric(vertical: 16, horizontal: 24),
+        padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Logo(showName: true),
+            Logo(
+              showName: true,
+              customName: Data.person.name.tr().replaceAll(' ', '\n'),
+            ),
             Expanded(
               child: ResponsiveBuilder(
                 onDesktop: Row(
@@ -113,20 +119,22 @@ class PortfolioAppBar extends HookWidget implements PreferredSizeWidget {
                 ),
               ),
             ),
-            ThemeSwitch(),
-            LocaleSwitch(),
-            Gap(16),
+            const ThemeSwitch(),
+            const LocaleSwitch(),
+            const Gap(16),
             ResponsiveBuilder(
               onMobile: IconButton(
                 // TODO: Implement
                 onPressed: () {},
-                icon: Icon(Icons.menu_rounded),
+                icon: const Icon(Icons.menu_rounded),
               ),
-              onDesktop: PortfolioButton(
-                // TODO: Implement
-                onPressed: () {},
-                label: LocaleKeys.downloadCV.tr(),
-              ),
+              onDesktop: Consumer(builder: (context, ref, child) {
+                return PortfolioButton(
+                  onPressed:
+                      ref.read(coreControllerProvider.notifier).downloadCV,
+                  label: LocaleKeys.downloadCV.tr(),
+                );
+              }),
             ),
           ],
         ),

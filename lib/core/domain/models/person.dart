@@ -5,14 +5,18 @@ class Person {
     required this.image,
     required this.logo,
     required this.socialLinks,
-    this.description,
+    required this.jobTitle,
+    required this.intro,
+    required this.resumeUrl,
   });
 
   final String name;
   final String about;
-  final String? description;
+  final String intro;
   final String image;
   final String logo;
+  final String jobTitle;
+  final String resumeUrl;
   final List<SocialLink> socialLinks;
 }
 

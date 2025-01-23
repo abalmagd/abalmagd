@@ -1,12 +1,17 @@
 {
   "en": "English",
   "ar": "عربي",
+  "myAbout": "Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium. Turpis tempus pharetra",
+  "myIntro": "Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium. Turpis tempus pharetra",
+  "myName": "Mahmoud Abulmajd",
   "languages": "Languages",
   "aboutMe": "About Me",
   "services": "Services",
   "testimonials": "Testimonials",
   "projects": "Projects",
   "contactMe": "Contact Me",
-  "name": "Name",
-  "downloadCV": "Download CV"
+  "downloadCV": "Download CV",
+  "hiIam": "Hi, I am",
+  "jobTitle": "Flutter Developer",
+  "hireMe": "Hire Me"
 }

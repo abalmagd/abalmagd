@@ -6,7 +6,12 @@ abstract class LocaleKeys {
   static const testimonials = 'testimonials';
   static const projects = 'projects';
   static const contactMe = 'contactMe';
-  static const name = 'name';
+  static const myName = 'myName';
   static const downloadCV = 'downloadCV';
   static const languages = 'languages';
+  static const myIntro = 'myIntro';
+  static const myAbout = 'myAbout';
+  static const hiIam = 'hiIam';
+  static const jobTitle = 'jobTitle';
+  static const hireMe = 'hireMe';
 }
