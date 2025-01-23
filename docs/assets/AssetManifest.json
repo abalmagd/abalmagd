@@ -1,0 +1,41 @@
+{
+  "assets/fonts/Cairo/Cairo-Bold.ttf": [
+    "assets/fonts/Cairo/Cairo-Bold.ttf"
+  ],
+  "assets/fonts/Cairo/Cairo-Regular.ttf": [
+    "assets/fonts/Cairo/Cairo-Regular.ttf"
+  ],
+  "assets/fonts/Cairo/Cairo-SemiBold.ttf": [
+    "assets/fonts/Cairo/Cairo-SemiBold.ttf"
+  ],
+  "assets/fonts/Poppins/Poppins-Bold.ttf": [
+    "assets/fonts/Poppins/Poppins-Bold.ttf"
+  ],
+  "assets/fonts/Poppins/Poppins-Regular.ttf": [
+    "assets/fonts/Poppins/Poppins-Regular.ttf"
+  ],
+  "assets/fonts/Poppins/Poppins-SemiBold.ttf": [
+    "assets/fonts/Poppins/Poppins-SemiBold.ttf"
+  ],
+  "assets/icons/github.svg": [
+    "assets/icons/github.svg"
+  ],
+  "assets/icons/linkedin.svg": [
+    "assets/icons/linkedin.svg"
+  ],
+  "assets/icons/logo.svg": [
+    "assets/icons/logo.svg"
+  ],
+  "assets/images/pfp.png": [
+    "assets/images/pfp.png"
+  ],
+  "assets/translations/ar.json": [
+    "assets/translations/ar.json"
+  ],
+  "assets/translations/en.json": [
+    "assets/translations/en.json"
+  ],
+  "packages/cupertino_icons/assets/CupertinoIcons.ttf": [
+    "packages/cupertino_icons/assets/CupertinoIcons.ttf"
+  ]
+}
