@@ -7,7 +7,7 @@
 
 ## 👨🏻‍💻 &nbsp;About Me
 
-- 🌱 I’m currently working on **[My Portfolio](https://github.com/abalmagd/abalmagd)**
+- 🌱 I’m currently working on **[My Portfolio](abulmagd.dev)**
 
 - 📫 You can reach me here **me@abulmagd.dev - 01093735899**
 
