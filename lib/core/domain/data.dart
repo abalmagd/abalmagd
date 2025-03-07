@@ -9,7 +9,7 @@ import 'models/service.dart';
 /// TODO: Fill data
 class Data {
   static var person = Person(
-    name: LocaleKeys.myName,
+    name: 'LocaleKeys.myName',
     jobTitle: LocaleKeys.jobTitle,
     about: LocaleKeys.myAbout,
     intro: LocaleKeys.myIntro,
