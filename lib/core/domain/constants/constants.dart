@@ -1,4 +1,4 @@
 abstract class Constants {
-  static const mobileBreakpoint = 500;
-  static const desktopBreakpoint = 950;
+  static const mobileBreakpoint = 599;
+  static const desktopBreakpoint = 900;
 }

@@ -85,7 +85,7 @@ class PortfolioAppBar extends HookWidget implements PreferredSizeWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Logo(
+            Brand(
               showName: true,
               customName: Data.person.name.tr().replaceAll(' ', '\n'),
             ),
@@ -131,7 +131,7 @@ class PortfolioAppBar extends HookWidget implements PreferredSizeWidget {
               onDesktop: Consumer(builder: (context, ref, child) {
                 return PortfolioButton(
                   onPressed:
-                      ref.read(coreControllerProvider.notifier).downloadCV,
+                      ref.read(coreControllerProvider.notifier).downloadResume,
                   label: LocaleKeys.downloadCV.tr(),
                 );
               }),

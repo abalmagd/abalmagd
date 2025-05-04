@@ -22,9 +22,10 @@ class HomePage extends HookWidget {
           vertical: kToolbarHeight * 2,
         ),
         children: [
-          const IntroView(),
+          const Center(child: IntroView()),
           const Gap(60),
           const ServicesView(),
+          const Gap(60),
           Text(
             'Work In Progress',
             style: Theme.of(context).textTheme.titleMedium,

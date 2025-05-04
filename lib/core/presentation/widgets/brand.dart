@@ -5,8 +5,8 @@ import 'package:gap/gap.dart';
 
 import '../../domain/data.dart';
 
-class Logo extends StatelessWidget {
-  const Logo({
+class Brand extends StatelessWidget {
+  const Brand({
     super.key,
     this.showIcon = true,
     this.showIconGlow = true,

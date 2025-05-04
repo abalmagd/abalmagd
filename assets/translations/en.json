@@ -1,8 +1,7 @@
 {
   "en": "English",
   "ar": "عربي",
-  "myAbout": "Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium. Turpis tempus pharetra",
-  "myIntro": "Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium. Turpis tempus pharetra",
+  "myAbout": "Experienced Flutter developer specializing in high-performance, cross-platform apps.\nI write clean, maintainable code and design beautiful, intuitive UIs for both Android and iOS.",
   "myName": "Mahmoud Abulmajd",
   "languages": "Languages",
   "aboutMe": "About Me",
@@ -14,11 +13,13 @@
   "hiIam": "Hi, I am",
   "jobTitle": "Flutter Developer",
   "hireMe": "Hire Me",
-  "mobileApp": "Mobile Apps",
-  "mobileAppDesc": "Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium. Turpis tempus pharetra",
-  "maintenance": "Maintenance",
-  "maintenanceDesc": "Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium. Turpis tempus pharetra",
-  "webApp": "Web Apps",
-  "webAppDesc": "Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium. Turpis tempus pharetra",
-  "servicesDesc": "Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium. Turpis tempus pharetra"
+  "crossPlatformApps": "Cross-Platform\nApp Development",
+  "crossPlatformAppsDesc": "• Single codebase apps.\n• Ensure native performance.\n• Deliver a consistent user experience.",
+  "designImplementation": "Design\nImplementation",
+  "designImplementationDesc": "• Implement responsive interfaces.\n• Ensure accuracy and consistency.",
+  "apiAndDataIntegration": "API Integration\n& Data Handling",
+  "apiAndDataIntegrationDesc": "• Parse and manage data.\n• Handle responses smoothly.\n• Secure transmission and handle authentication.",
+  "appDeployment": "App Deployment\n(iOS & Android)",
+  "appDeploymentDesc": "• Prepare production builds for both platforms.\n• Set up signing and versioning.\n• Handle updates.",
+  "servicesDesc": "I offer high-quality, cross-platform mobile app development focused on seamless performance, responsive design, and efficient integration.\nMy services are tailored to deliver scalable, user-friendly solutions for any project."
 }

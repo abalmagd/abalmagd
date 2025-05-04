@@ -8,14 +8,12 @@ class Person {
     required this.logo,
     required this.socialLinks,
     required this.jobTitle,
-    required this.intro,
     required this.resumeUrl,
     required this.services,
   });
 
   final String name;
   final String about;
-  final String intro;
   final String image;
   final String logo;
   final String jobTitle;

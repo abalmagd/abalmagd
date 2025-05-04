@@ -1,7 +1,7 @@
 import 'dart:ui';
 
 /// Generate LocaleKeys using this command:
-/// ```flutter pub run easy_localization:generate -f keys -o locale_keys.g.dart -S assets/translations/ -O lib/core/domain/localization```
+/// ```flutter pub run easy_localization:generate -f keys -o locale_keys.dart -S assets/translations/ -O lib/core/domain/localization```
 
 enum PortfolioLocale {
   ar(Locale('ar'), TextDirection.rtl),
@@ -14,10 +14,7 @@ enum PortfolioLocale {
 }
 
 class Localization {
-  static const supportedLocales = [
-    PortfolioLocale.en,
-    PortfolioLocale.ar,
-  ];
+  static const supportedLocales = PortfolioLocale.values;
 
   static bool isRTL(Locale? locale) {
     final portfolioLocale = PortfolioLocale.values.singleWhere(

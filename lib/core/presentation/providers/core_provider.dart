@@ -9,7 +9,7 @@ class CoreController extends Notifier<void> {
   @override
   void build() {}
 
-  void downloadCV() {
+  void downloadResume() {
     final anchorElement = AnchorElement(href: Data.person.resumeUrl);
     anchorElement.download = Data.person.resumeUrl;
     anchorElement.click();

@@ -20,11 +20,12 @@ class IntroView extends StatelessWidget {
       onMobile: Column(
         children: [
           ImageHalf(),
-          Gap(16),
+          Gap(40),
           TextHalf(),
         ],
       ),
       onDesktop: Row(
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Expanded(child: TextHalf()),
           Gap(40),
@@ -61,17 +62,20 @@ class TextHalf extends StatelessWidget {
         const Gap(12),
         FittedBox(
           child: Text(
-            Data.person.jobTitle.tr().replaceAll(' ', '\n'),
-            style: theme.textTheme.titleLarge?.copyWith(
-              height: 1,
-            ),
+            Data.person.jobTitle.tr().replaceAll(
+                  ' ',
+                  '\n${width < Constants.desktopBreakpoint ? '' : '\t\t\t'}',
+                ),
             textAlign:
                 width < Constants.desktopBreakpoint ? TextAlign.center : null,
+            style: theme.textTheme.titleLarge?.copyWith(height: 1),
           ),
         ),
         const Gap(32),
         Text(
-          Data.person.intro.tr(),
+          Data.person.about.tr(),
+          textAlign:
+              width < Constants.desktopBreakpoint ? TextAlign.center : null,
           style: theme.textTheme.bodyMedium,
         ),
         const Gap(32),

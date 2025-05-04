@@ -37,7 +37,7 @@ class Portfolio extends ConsumerWidget with CustomTheme {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return MaterialApp(
-      title: Data.person.name,
+      onGenerateTitle: (context) => Data.person.name.tr(),
       debugShowCheckedModeBanner: false,
       localizationsDelegates: context.localizationDelegates,
       supportedLocales: context.supportedLocales,

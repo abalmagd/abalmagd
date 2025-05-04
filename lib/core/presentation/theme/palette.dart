@@ -12,11 +12,11 @@ class Palette {
 
   // Dark Theme
   static const surfaceDark = Color(0xFF1E1E1E);
-  static const primaryContainerDark = Color(0xFF2A2A2A);
+  static const primaryContainerDark = Color(0xFF383838);
   static const dividerDark = Color(0xFF3D3D3D);
 
   // Light Theme
   static const surfaceLight = Colors.white;
-  static const primaryContainerLight = Color(0xFFF8F8F8);
+  static const primaryContainerLight = Color(0xFFF1F1F1);
   static const dividerLight = Color(0xFFC0C0C0);
 }

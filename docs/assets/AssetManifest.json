@@ -17,6 +17,18 @@
   "assets/fonts/Poppins/Poppins-SemiBold.ttf": [
     "assets/fonts/Poppins/Poppins-SemiBold.ttf"
   ],
+  "assets/icons/api-data.svg": [
+    "assets/icons/api-data.svg"
+  ],
+  "assets/icons/app-deployment.svg": [
+    "assets/icons/app-deployment.svg"
+  ],
+  "assets/icons/cross-platform.svg": [
+    "assets/icons/cross-platform.svg"
+  ],
+  "assets/icons/design.svg": [
+    "assets/icons/design.svg"
+  ],
   "assets/icons/github.svg": [
     "assets/icons/github.svg"
   ],
@@ -25,6 +37,9 @@
   ],
   "assets/icons/logo.svg": [
     "assets/icons/logo.svg"
+  ],
+  "assets/images/favicon.png": [
+    "assets/images/favicon.png"
   ],
   "assets/images/pfp.png": [
     "assets/images/pfp.png"

@@ -1,5 +1,3 @@
-import 'package:easy_localization/easy_localization.dart';
-
 import 'constants/assets.dart';
 import 'localization/locale_keys.dart';
 import 'models/person.dart';
@@ -9,10 +7,9 @@ import 'models/service.dart';
 /// TODO: Fill data
 class Data {
   static var person = Person(
-    name: 'LocaleKeys.myName',
+    name: LocaleKeys.myName,
     jobTitle: LocaleKeys.jobTitle,
     about: LocaleKeys.myAbout,
-    intro: LocaleKeys.myIntro,
     image: Assets.pfp,
     logo: Assets.logo,
     resumeUrl:
@@ -31,19 +28,24 @@ class Data {
     ],
     services: [
       PortfolioService(
-        title: LocaleKeys.mobileApp,
-        description: LocaleKeys.mobileAppDesc,
-        icon: Assets.mobileApp,
+        title: LocaleKeys.crossPlatformApps,
+        description: LocaleKeys.crossPlatformAppsDesc,
+        icon: Assets.crossPlatform,
       ),
       PortfolioService(
-        title: LocaleKeys.webApp,
-        description: LocaleKeys.webAppDesc,
-        icon: Assets.mobileApp,
+        title: LocaleKeys.designImplementation,
+        description: LocaleKeys.designImplementationDesc,
+        icon: Assets.design,
       ),
       PortfolioService(
-        title: LocaleKeys.maintenance,
-        description: LocaleKeys.maintenanceDesc,
-        icon: Assets.maintenance,
+        title: LocaleKeys.apiAndDataIntegration,
+        description: LocaleKeys.apiAndDataIntegrationDesc,
+        icon: Assets.apiData,
+      ),
+      PortfolioService(
+        title: LocaleKeys.appDeployment,
+        description: LocaleKeys.appDeploymentDesc,
+        icon: Assets.appDeployment,
       ),
     ],
   );
