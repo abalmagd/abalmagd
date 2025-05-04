@@ -6,7 +6,7 @@ import 'package:gap/gap.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:portfolio/core/domain/data.dart';
 import 'package:portfolio/core/domain/localization/locale_keys.dart';
-import 'package:portfolio/core/presentation/providers/core_controller_provider.dart';
+import 'package:portfolio/core/presentation/providers/core_provider.dart';
 import 'package:portfolio/core/presentation/widgets/glass_container.dart';
 import 'package:portfolio/core/presentation/widgets/locale_switch.dart';
 import 'package:portfolio/core/presentation/widgets/portfolio_button.dart';
